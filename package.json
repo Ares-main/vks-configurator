@@ -1,0 +1,30 @@
+{
+  "name": "vks-configurator",
+  "version": "0.1.0",
+  "description": "TUI tool for automating vSphere VKS Kubernetes environment setup — Harbor registry, certificates, tool installation, and cluster connection.",
+  "module": "src/index.tsx",
+  "type": "module",
+  "bin": {
+    "vks-configurator": "src/index.tsx"
+  },
+  "scripts": {
+    "start": "bun run src/index.tsx",
+    "dev": "bun --watch run src/index.tsx",
+    "typecheck": "bun x tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@inkjs/ui": "^2.0.0",
+    "ink": "^6.8.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
